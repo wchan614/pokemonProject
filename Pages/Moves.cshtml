@@ -1,0 +1,72 @@
+@page
+@model MovesModel
+@{
+    ViewData["Moves"] = "Moves";
+}
+
+
+
+<div>
+    <div id="pokemonResult">
+        <div class="pokemonInfo" style="text-align: center;">
+            <h1>
+                @Model.move.Name.ToUpper().Replace("-"," ")
+            </h1>
+            <div>
+                @foreach(var text in Model.move.FlavorTextEntries){
+                    if(text.Language.Name == "en") {
+                        @(text.FlavorText)
+                        break;
+                    }
+                }
+            </div>
+            <br>
+            <div>
+                TYPE: @Model.move.Type.Name.ToUpper()
+            </div>
+            <div>
+                CATAGORY: @Model.move.DamageClass.Name.ToUpper()
+            </div>
+            <div>
+                POWER: @(Convert.ToBoolean(Model.move.Power) ? Model.move.Power: "None")
+            </div>
+            <div>
+                ACCURACY: @(Convert.ToBoolean(Model.move.Accuracy) ? Model.move.Accuracy: "100")
+            </div>
+            <div>
+                PP: @Model.move.Pp
+            </div>
+            <div>
+                PRIORITY: @Model.move.Priority
+            </div>
+            <div>
+                TARGET: @Model.move.Target.Name.ToUpper().Replace("-", " ")
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="pokemonResultExtra">
+    <div class="pkmnResultExtraBox">
+        <div class="pkmnResultBoxesDynamic">
+             <div class="pkmnResultTitle" style="margin-bottom: 10px;">Pokemon Able To Learn</div>
+             @foreach (var pkmn in Model.move.LearnedByPokemon) {
+                if (Model.isValidPokemon(pkmn.Name)) {
+                    <div class="moveForm">
+                        <div class="moveFormButton">
+                            @{string link = "./Pokemon?id=" + pkmn.Name;}
+                            <a href="@link">@pkmn.Name.ToUpper().Replace("-"," ")</a>
+                        </div>
+                    </div>
+                }
+             }
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load',(event)=> {
+        lockMinWidth();
+    });
+</script>

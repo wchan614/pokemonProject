@@ -1,0 +1,331 @@
+﻿body {
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+    background: #464646;
+    width: 100%;
+    height: 50px;
+    margin: 0 0;
+    min-width: 1320px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+nav div {
+    padding-left: 35px;
+    padding-top: 12px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    min-width:  1320px;
+    background:#ececd8;
+}
+
+.title {
+    size: 2em;
+}
+
+#indexSearch {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    height: 220px;
+}
+
+#indexContents {
+    background: #d4d4c2;
+    overflow: auto;
+    height: 80vh;  /*275*/
+    width: auto;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+#searchBox {
+    width: 500px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.35em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+
+.spriteIcon {
+    text-align: center;
+    width: 100px;
+    height: 80px;
+    font-size: 0.8em;
+    padding: 0;
+}
+
+.spriteIcon div {
+    text-align: center;
+    width: 100px;
+    height: 87px;
+}
+
+.spriteFormButton {
+    width: 100px;
+    height: 87px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+footer {
+    height: 15px;
+    font-size: 0.6em;
+    margin: 0;
+}
+
+#pokemonResult {
+    text-align: center;
+    height: 410px;
+    width: 1320px;
+    padding-left: calc((100% - 1320px) / 2);
+    padding-right: calc((100% - 1320px) / 2);
+
+}
+
+#pkmnPageImg {
+    width: 400px;
+    height: 400px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.pokemonInfo {
+    height: 200px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    vertical-align:top;
+}
+
+#pokemonResultExtra {
+    height: calc(100vh - 500px);
+    width: 1320px;
+    padding-left: calc((100% - 1320px) / 2);
+    padding-right: calc((100% - 1320px) / 2);
+    background-color: rgb(223, 223, 206);
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.pkmnResultExtraBox {
+    width: 1320px;
+    background-color: rgb(207, 206, 197);
+    display: inline-block;
+    text-align: center;
+}
+
+.abilityListing {
+    margin: 0;
+    display: block;
+    font-size: 0.8em;
+    color:#081b6e;
+    text-decoration: none;
+}
+
+
+.pkmnResultBoxesSmall {
+    width: calc(160px - 14px);
+    height: 200px;
+    margin: 1px; /*14 in total*/
+    padding: 5px;
+    border-width: 1px; 
+    display: inline-block;
+    border-style: solid ;
+    border-color: rgb(119, 118, 116);
+    background-color: #dfdedb;
+    text-align: center;
+    vertical-align: top;
+    
+}
+.pkmnResultBoxesMedium {
+    width: calc(654px - 14px);
+    height: 250px;
+    margin: 1px;
+    padding: 5px;
+    border-width: 1px; 
+    display: inline-block;
+    border-style: solid ;
+    border-color: rgb(119, 118, 116);
+    background-color: #dfdedb;
+    text-align: center;
+    vertical-align: top;
+    
+}
+.pkmnResultBoxesLarge {
+    width: calc(1311px - 14px);
+    height: 300px;
+    margin: 1px;
+    padding: 5px;
+    border-width: 1px; 
+    display: inline-block;
+    border-style: solid ;
+    border-color: rgb(119, 118, 116);
+    background-color: #dfdedb;
+    text-align: center;
+    vertical-align: top;
+}
+
+.pkmnResultBoxesDynamic {
+    width: calc(1311px - 14px);
+    height: 100%;
+    margin: 1px;
+    padding: 5px;
+    border-width: 1px; 
+    display: inline-block;
+    border-style: solid ;
+    border-color: rgb(119, 118, 116);
+    background-color: #dfdedb;
+    text-align: center;
+    vertical-align: top;
+}
+
+.pkmnResultMoveBox {
+    width: 24%;
+    height: 30px;
+    margin-top: 1px;
+    display: inline-block;
+    font-size: 1.05em;
+}
+
+
+.pkmnResultBoxText {
+    position: relative;
+    padding: 5px;
+    top: calc(50% - 50px)
+}
+
+.pkmnResultTitle {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-color: hsla(204, 75%, 36%, 0.425);
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.pkmnEVBox {
+    position: relative;
+    padding: 5px;
+    height: 150px;
+    top: calc(40% - 50px);
+}
+
+.pkmnEVBox div {
+    position: relative;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+.pkmnEVBox span {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.pokemonInfo h5 a {
+    text-decoration: none;
+    color: rgb(30, 138, 146);
+}
+
+.pokemonInfo h5 a:visited {
+    color: none;
+}
+
+.pokemonInfo h5 a:active {
+    color: none;
+}
+
+.progressBar {
+    width:  100%;
+    height: 30px;
+    text-align: left;
+    margin-top: 6px;
+
+}
+
+.progressBarTitle {
+    height: 30px;
+    width: calc(15% - 3px);
+    padding-left: 3px;
+    font-weight: bold;
+    float: left;
+    
+}
+
+.progressBarTitle div {
+    float: right;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.progress{
+     /*250 basestat max*/
+    height: 24px;
+    width: auto;
+    display:inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: hsl(204deg 68% 16% / 43%);
+}
+
+.TypeEffTitle {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.pkmnResultBoxesLarge span {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.moveForm {
+    text-align: center;
+    height: 30px;
+    width: 24%;
+    display: inline-block;
+}
+
+.moveFormButton {
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2px;
+    font-size: 1.08em;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    outline: none;
+    
+}
+
+.moveFormButton a {
+    text-decoration: none;
+    color:#181818;
+}
+
+.pokemonInfo div {
+    margin-top: 2px;
+    font-weight: bold;
+}

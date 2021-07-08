@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="indexSearch">
+    <h1>Pokemon Project</h1>
+    <p>Encyclopedia powered by PokeAPI</p>
+    <form autocomplete="off" onkeypress="return noenter()">
+        <input type="text" id="searchBox" name="searchBox" value ="" onkeyup="search()">
+    </form>
+</div>
+
+
+<div id="indexContents" >
+    <!--Live search results go here.-->
+    @for (int i = 0; i < Model.pokemonNames.Count; i++) {
+        string name =  Model.pokemonNames[i].ToLower();
+        string path = "/lib/Sprites/" + Model.fixStringPokemon(name) + ".png";
+        <form class="spriteForm" name="@name" style="display:inline-block; margin: 0;" method="POST" asp-page-handler="GetInfo">
+            <div class="spriteIcon"  title="@Model.pokemonNames[i]">
+                <div style="background: url(@path); background-size: contain; background-repeat: no-repeat" title="@name">
+                    <input type="submit" class="spriteFormButton" name="id" value="@(i+1)"/>
+                </div>
+                @Model.pokemonNames[i]
+            </div>
+        </form>
+    }
+</div>
+
+
+<script>
+    window.addEventListener('load',(event)=> {
+        unlockMinWidth();
+    }
+    );
+</script>
+
+
+

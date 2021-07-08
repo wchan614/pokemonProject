@@ -1,0 +1,4022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAiBjhUGpeZU2vpgrVKeGKPAAAAAACAAAAAAAQZgAAAAEAACAAAABWMgVLSeaWBOE1h4+y6XhtE/0BVVt9OJAUPwTh2z953wAAAAAOgAAAAAIAACAAAABg7XJ6gNwZOty/KytTS/2FAqG7e3izQzy0mc0QuN5hOCAAAADzEh/Lu0p1tQmIn2yfu0pY345GgCE14CCI0nWsvkQb4kAAAACaN9bNmepAZLTIQXCfT6ABS7+XZf2BhJPLAWRVxzawZ94x5crKDVgCk/9JZH2SfHbwZPX7OWVnfOrRzhXEpP5N</EncryptedPassword>
+    <_PublishTargetUrl>ftp://pokemonproject.somee.com/www.pokemonproject.somee.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/19/2021 16:29:23</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>02/19/2021 16:29:23</publishTime>
+    </File>
+    <File Include="pokemonProject.deps.json">
+      <publishTime>07/02/2021 14:46:12</publishTime>
+    </File>
+    <File Include="pokemonProject.dll">
+      <publishTime>07/02/2021 14:46:12</publishTime>
+    </File>
+    <File Include="pokemonProject.exe">
+      <publishTime>07/02/2021 14:46:12</publishTime>
+    </File>
+    <File Include="pokemonProject.pdb">
+      <publishTime>07/02/2021 14:46:11</publishTime>
+    </File>
+    <File Include="pokemonProject.runtimeconfig.json">
+      <publishTime>03/16/2021 14:40:48</publishTime>
+    </File>
+    <File Include="pokemonProject.Views.dll">
+      <publishTime>07/02/2021 14:46:12</publishTime>
+    </File>
+    <File Include="pokemonProject.Views.pdb">
+      <publishTime>07/02/2021 14:46:12</publishTime>
+    </File>
+    <File Include="publish/appsettings.Development.json">
+      <publishTime>02/19/2021 16:29:23</publishTime>
+    </File>
+    <File Include="publish/appsettings.json">
+      <publishTime>02/19/2021 16:29:23</publishTime>
+    </File>
+    <File Include="publish/pokemonProject.deps.json">
+      <publishTime>03/16/2021 14:40:47</publishTime>
+    </File>
+    <File Include="publish/pokemonProject.runtimeconfig.json">
+      <publishTime>03/16/2021 14:40:48</publishTime>
+    </File>
+    <File Include="publish/web.config">
+      <publishTime>07/02/2021 12:24:19</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>07/02/2021 14:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>03/16/2021 15:10:07</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>02/19/2021 16:29:23</publishTime>
+    </File>
+    <File Include="wwwroot/js/index.js">
+      <publishTime>03/12/2021 17:45:44</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Pokemons.txt">
+      <publishTime>02/23/2021 15:07:19</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/abomasnow-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/abomasnow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/abra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/absol-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/absol.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/accelgor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aegislash-blade.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aegislash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aerodactyl-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aerodactyl.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aggron-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aggron.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aipom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alakazam-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alakazam.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-caramel-swirl-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-lemon-cream-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-matcha-cream-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-mint-cream-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-rainbow-swirl-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-cream-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-ruby-swirl-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-salted-cream-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-berry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-clover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-flower.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-love.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-plain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-ribbon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie-vanilla-cream-strawberry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alcremie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/alomomola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/altaria-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/altaria.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/amaura.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ambipom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/amoonguss.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ampharos-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ampharos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/anorith.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/appletun.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/applin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/araquanid.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arbok.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arcanine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-bug.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-dark.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-dragon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-electric.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-fairy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-fighting.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-fire.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-flying.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-ghost.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-grass.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-ground.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-ice.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-poison.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-psychic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-rock.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-steel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus-water.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arceus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/archen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/archeops.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arctovish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arctozolt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ariados.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/armaldo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aromatisse.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aron.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/arrokuda.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/articuno-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/articuno.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/audino-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/audino.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/aurorus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/avalugg.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/axew.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/azelf.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/azumarill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/azurill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bagon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/baltoy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/banette-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/banette.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/barbaracle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/barboach.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/barraskewda.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/basculin-blue-striped.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/basculin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bastiodon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bayleef.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/beartic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/beautifly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/beedrill-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/beedrill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/beheeyem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/beldum.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bellossom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bellsprout.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bergmite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bewear.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bibarel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bidoof.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/binacle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bisharp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blacephalon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blastoise-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blastoise-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blastoise.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blaziken-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blaziken.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blipbug.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blissey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/blitzle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/boldore.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/boltund.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bonsly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bouffalant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bounsweet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/braixen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/braviary.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/breloom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/brionne.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bronzong.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bronzor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bruxish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/budew.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/buizel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bulbasaur.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/buneary.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/bunnelby.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/burmy-sandy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/burmy-trash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/burmy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/butterfree-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/butterfree.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/buzzwole.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cacnea.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cacturne.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/calyrex-ice-rider.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/calyrex-shadow-rider.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/calyrex.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/camerupt-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/camerupt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/carbink.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/carkol.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/carnivine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/carracosta.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/carvanha.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cascoon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/castform-rainy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/castform-snowy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/castform-sunny.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/castform.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/caterpie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/celebi.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/celesteela.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/centiskorch-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/centiskorch.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chandelure.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chansey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charizard-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charizard-mega-x.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charizard-mega-y.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charizard.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charjabug.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charmander.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/charmeleon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chatot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cherrim-sunshine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cherrim.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cherubi.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chesnaught.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chespin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chewtle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chikorita.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chimchar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chimecho.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chinchou.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/chingling.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cinccino.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cinderace-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cinderace.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/clamperl.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/clauncher.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/clawitzer.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/claydol.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/clefable.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/clefairy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cleffa.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/clobbopus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cloyster.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/coalossal-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/coalossal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cobalion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cofagrigus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/combee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/combusken.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/comfey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/conkeldurr.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/copperajah-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/copperajah.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/corphish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/corsola-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/corsola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/corviknight-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/corviknight.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/corvisquire.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cosmoem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cosmog.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cottonee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/crabominable.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/crabrawler.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cradily.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cramorant-gorging.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cramorant-gulping.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cramorant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cranidos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/crawdaunt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cresselia.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/croagunk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/crobat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/croconaw.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/crustle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cryogonal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cubchoo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cubone.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cufant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cursola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cutiefly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/cyndaquil.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darkrai.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darmanitan-galar-zen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darmanitan-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darmanitan-zen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darmanitan.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dartrix.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darumaka-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/darumaka.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/decidueye.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dedenne.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deerling-autumn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deerling-summer.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deerling-winter.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deerling.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deino.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/delcatty.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/delibird.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/delphox.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deoxys-attack.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deoxys-defense.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deoxys-speed.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/deoxys.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dewgong.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dewott.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dewpider.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dhelmise.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dialga.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/diancie-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/diancie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/diggersby.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/diglett-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/diglett.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ditto.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dodrio.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/doduo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/donphan.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dottler.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/doublade.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dracovish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dracozolt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dragalge.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dragapult.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dragonair.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dragonite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drakloak.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drampa.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drapion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dratini.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drednaw-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drednaw.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dreepy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drifblim.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drifloon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drilbur.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drizzile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/drowzee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/druddigon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dubwool.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ducklett.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dugtrio-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dugtrio.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dunsparce.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/duosion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/duraludon-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/duraludon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/durant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dusclops.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dusknoir.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/duskull.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dustox.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/dwebble.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eelektrik.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eelektross.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eevee-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eevee-starter.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eevee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eiscue-noice.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eiscue.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ekans.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eldegoss.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/electabuzz.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/electivire.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/electrike.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/electrode.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/elekid.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/elgyem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/emboar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/emolga.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/empoleon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/entei.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/escavalier.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/espeon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/espurr.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eternatus-eternamax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/eternatus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/excadrill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/exeggcute.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/exeggutor-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/exeggutor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/exploud.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/falinks.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/farfetchd-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/farfetchd.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/fearow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/feebas.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/frillish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/hippopotas.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/hippowdon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/indeedee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/jellicent.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/meowstic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-alola-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-hoenn-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-kalos-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-original-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-partner-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-sinnoh-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-starter.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-unova-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu-world-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pikachu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/pyroar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/female/unfezant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/fennekin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/feraligatr.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ferroseed.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ferrothorn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/finneon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flaaffy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flabebe-blue.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flabebe-orange.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flabebe-white.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flabebe-yellow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flabebe.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flapple-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flapple.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flareon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/fletchinder.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/fletchling.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floatzel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floette-blue.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floette-eternal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floette-orange.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floette-white.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floette-yellow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/floette.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/florges-blue.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/florges-orange.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/florges-white.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/florges-yellow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/florges.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/flygon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/fomantis.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/foongus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/forretress.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/fraxure.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/frillish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/froakie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/frogadier.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/froslass.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/frosmoth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-dandy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-debutante.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-diamond.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-heart.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-kabuki.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-la-reine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-matron.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-pharaoh.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furfrou.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/furret.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gabite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gallade-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gallade.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/galvantula.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/garbodor-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/garbodor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/garchomp-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/garchomp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gardevoir-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gardevoir.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gastly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gastrodon-east.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gastrodon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/genesect-burn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/genesect-chill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/genesect-douse.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/genesect-shock.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/genesect.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gengar-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gengar-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gengar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/geodude-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/geodude.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gible.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gigalith.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/girafarig.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/giratina-origin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/giratina.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/glaceon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/glalie-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/glalie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/glameow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/glastrier.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gligar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gliscor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gloom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gogoat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golbat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/goldeen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golduck.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golem-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golett.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golisopod.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/golurk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/goodra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/goomy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gorebyss.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gossifleur.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gothita.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gothitelle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gothorita.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gourgeist-large.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gourgeist-small.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gourgeist-super.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gourgeist.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/granbull.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grapploct.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/graveler-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/graveler.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/greedent.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/greninja-ash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/greninja.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grimer-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grimer.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grimmsnarl-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grimmsnarl.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grookey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grotle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/groudon-primal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/groudon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grovyle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/growlithe.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grubbin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/grumpig.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gulpin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gumshoos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gurdurr.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/guzzlord.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gyarados-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/gyarados.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hakamo-o.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/happiny.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hariyama.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hatenna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hatterene-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hatterene.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hattrem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/haunter.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hawlucha.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/haxorus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/heatmor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/heatran.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/heliolisk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/helioptile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/heracross-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/heracross.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/herdier.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hippopotas.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hippowdon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hitmonchan.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hitmonlee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hitmontop.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ho-oh.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/honchkrow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/honedge.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hoopa-unbound.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hoopa.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hoothoot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hoppip.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/horsea.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/houndoom-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/houndoom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/houndour.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/huntail.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hydreigon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/hypno.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/igglybuff.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/illumise.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/impidimp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/incineroar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/indeedee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/infernape.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/inkay.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/inteleon-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/inteleon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ivysaur.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jangmo-o.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jellicent.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jigglypuff.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jirachi.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jolteon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/joltik.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jumpluff.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/jynx.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kabuto.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kabutops.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kadabra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kakuna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kangaskhan-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kangaskhan.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/karrablast.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kartana.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kecleon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/keldeo-resolute.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/keldeo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kingdra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kingler-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kingler.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kirlia.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/klang.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/klefki.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/klink.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/klinklang.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/koffing.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/komala.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kommo-o.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/krabby.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kricketot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kricketune.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/krokorok.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/krookodile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kubfu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kyogre-primal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kyogre.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kyurem-black.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kyurem-white.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/kyurem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lairon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lampent.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/landorus-therian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/landorus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lanturn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lapras-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lapras.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/larvesta.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/larvitar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/latias-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/latias.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/latios-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/latios.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/leafeon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/leavanny.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ledian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ledyba.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lickilicky.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lickitung.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/liepard.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lileep.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lilligant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lillipup.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/linoone-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/linoone.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/litleo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/litten.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/litwick.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lombre.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lopunny-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lopunny.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lotad.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/loudred.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lucario-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lucario.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ludicolo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lugia-shadow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lugia.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lumineon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lunala.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lunatone.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lurantis.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/luvdisc.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/luxio.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/luxray.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lycanroc-dusk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lycanroc-midnight.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/lycanroc.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/machamp-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/machamp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/machoke.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/machop.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magby.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magcargo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magearna-original.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magearna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magikarp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magmar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magmortar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magnemite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magneton.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/magnezone.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/makuhita.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/malamar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mamoswine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/manaphy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mandibuzz.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/manectric-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/manectric.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mankey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mantine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mantyke.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/maractus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mareanie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mareep.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/marill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/marowak-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/marowak.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/marshadow-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/marshadow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/marshtomp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/masquerain.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mawile-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mawile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/medicham-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/medicham.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meditite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meganium.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/melmetal-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/melmetal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meloetta-pirouette.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meloetta.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meltan.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meowstic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meowth-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meowth-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meowth-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/meowth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mesprit.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/metagross-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/metagross.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/metang.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/metapod.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mew.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mewtwo-mega-x.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mewtwo-mega-y.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mewtwo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mienfoo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mienshao.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mightyena.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/milcery.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/milotic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/miltank.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mime-jr.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mimikyu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minccino.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-blue-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-blue.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-green-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-green.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-indigo-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-indigo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-orange-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-orange.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-red-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-red.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-violet-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-violet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-yellow-gen7.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior-yellow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minior.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/minun.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/misdreavus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mismagius.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/moltres-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/moltres.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/monferno.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/morelull.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/morgrem.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/morpeko-hangry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/morpeko.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mothim.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mr-mime-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mr-mime.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mr-rime.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mudbray.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mudkip.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/mudsdale.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/muk-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/muk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/munchlax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/munna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/murkrow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/musharna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/naganadel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/natu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/necrozma-dawn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/necrozma-dusk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/necrozma-ultra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/necrozma.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nickit.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nidoking.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nidoqueen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nidoran-f.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nidoran-m.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nidorina.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nidorino.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nihilego.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nincada.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ninetales-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ninetales.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ninjask.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/noctowl.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/noibat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/noivern.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nosepass.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/numel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/nuzleaf.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/obstagoon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/octillery.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oddish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/omanyte.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/omastar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/onix.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oranguru.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/orbeetle-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/orbeetle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oricorio-pau.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oricorio-pom-pom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oricorio-sensu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oricorio.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/oshawott.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pachirisu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/palkia.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/palossand.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/palpitoad.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pancham.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pangoro.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/panpour.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pansage.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pansear.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/paras.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/parasect.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/passimian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/patrat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pawniard.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pelipper.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/perrserker.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/persian-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/persian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/petilil.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/phanpy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/phantump.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pheromosa.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/phione.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pichu-spiky-eared.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pichu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pidgeot-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pidgeot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pidgeotto.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pidgey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pidove.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pignite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-alola-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-belle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-cosplay.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-hoenn-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-kalos-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-libre.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-original-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-partner-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-phd.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-pop-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-rock-star.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-sinnoh-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-starter.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-unova-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu-world-cap.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikachu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pikipek.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/piloswine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pincurchin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pineco.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pinsir-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pinsir.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/piplup.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/plusle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/poipole.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/politoed.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/poliwag.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/poliwhirl.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/poliwrath.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/polteageist.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ponyta-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ponyta.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/poochyena.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/popplio.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/porygon-z.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/porygon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/porygon2.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/primarina.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/primeape.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/prinplup.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/probopass.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/psyduck.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pumpkaboo-large.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pumpkaboo-small.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pumpkaboo-super.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pumpkaboo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pupitar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/purrloin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/purugly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pyroar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/pyukumuku.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/quagsire.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/quilava.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/quilladin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/qwilfish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/raboot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/raichu-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/raichu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/raikou.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ralts.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rampardos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rapidash-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rapidash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/raticate-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/raticate.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rattata-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rattata.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rayquaza-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rayquaza.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/regice.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/regidrago.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/regieleki.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/regigigas.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/regirock.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/registeel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/relicanth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/remoraid.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/reshiram.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/reuniclus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rhydon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rhyhorn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rhyperior.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ribombee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rillaboom-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rillaboom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/riolu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rockruff.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/roggenrola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rolycoly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rookidee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/roselia.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/roserade.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rotom-fan.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rotom-frost.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rotom-heat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rotom-mow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rotom-wash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rotom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rowlet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/rufflet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/runerigus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sableye-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sableye.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/salamence-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/salamence.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/salandit.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/salazzle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/samurott.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandaconda-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandaconda.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandshrew-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandshrew.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandslash-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandslash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sandygast.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sawk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sawsbuck-autumn.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sawsbuck-summer.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sawsbuck-winter.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sawsbuck.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scatterbug.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sceptile-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sceptile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scizor-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scizor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scolipede.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scorbunny.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scrafty.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scraggy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/scyther.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/seadra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/seaking.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sealeo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/seedot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/seel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/seismitoad.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sentret.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/serperior.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/servine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/seviper.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sewaddle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sharpedo-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sharpedo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shaymin-sky.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shaymin.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shedinja.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shelgon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shellder.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shellos-east.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shellos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shelmet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shieldon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shiftry.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shiinotic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shinx.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shroomish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shuckle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/shuppet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sigilyph.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silcoon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silicobra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-bug.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-dark.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-dragon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-electric.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-fairy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-fighting.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-fire.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-flying.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-ghost.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-grass.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-ground.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-ice.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-poison.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-psychic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-rock.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-steel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally-water.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/silvally.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/simipour.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/simisage.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/simisear.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sinistea.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sirfetchd.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sizzlipede.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skarmory.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skiddo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skiploom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skitty.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skorupi.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skrelp.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skuntank.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/skwovet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slaking.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slakoth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sliggoo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowbro-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowbro-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowbro.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowking-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowking.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowpoke-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slowpoke.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slugma.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/slurpuff.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/smeargle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/smoochum.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sneasel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snivy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snorlax-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snorlax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snorunt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snover.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/snubbull.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sobble.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/solgaleo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/solosis.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/solrock.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spearow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spectrier.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spewpa.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spheal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spinarak.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spinda-blank.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spinda-filled.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spinda.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spiritomb.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spoink.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/spritzee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/squirtle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stakataka.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stantler.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/staraptor.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/staravia.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/starly.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/starmie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/staryu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/steelix-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/steelix.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/steenee.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stonjourner.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stoutland.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stufful.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stunfisk-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stunfisk.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/stunky.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sudowoodo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/suicune.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sunflora.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sunkern.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/surskit.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swablu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swadloon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swalot.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swampert-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swampert.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swanna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swellow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swinub.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swirlix.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/swoobat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/sylveon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/taillow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/talonflame.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tangela.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tangrowth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tapu-bulu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tapu-fini.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tapu-koko.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tapu-lele.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tauros.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/teddiursa.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tentacool.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tentacruel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tepig.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/terrakion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/thievul.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/throh.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/thundurus-therian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/thundurus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/thwackey.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/timburr.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tirtouga.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/togedemaru.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/togekiss.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/togepi.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/togetic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/torchic.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/torkoal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tornadus-therian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tornadus.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/torracat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/torterra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/totodile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toucannon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toxapex.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toxel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toxicroak.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toxtricity-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toxtricity-low-key.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/toxtricity.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tranquill.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/trapinch.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/treecko.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/trevenant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tropius.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/trubbish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/trumbeak.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tsareena.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/turtonator.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/turtwig.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tympole.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tynamo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/type-null.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/typhlosion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tyranitar-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tyranitar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tyrantrum.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tyrogue.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/tyrunt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/umbreon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unfezant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-b.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-c.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-d.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-e.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-exclamation.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-f.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-g.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-h.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-i.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-j.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-k.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-l.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-m.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-n.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-o.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-p.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-q.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-question.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-r.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-s.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-t.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-u.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-v.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-w.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-x.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-y.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown-z.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/unown.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/ursaring.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/urshifu-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/urshifu-rapid-strike-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/urshifu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/uxie.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vanillish.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vanillite.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vanilluxe.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vaporeon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/venipede.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/venomoth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/venonat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/venusaur-gmax.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/venusaur-mega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/venusaur.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vespiquen.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vibrava.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/victini.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/victreebel.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vigoroth.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vikavolt.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vileplume.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/virizion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-archipelago.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-continental.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-elegant.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-fancy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-garden.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-high-plains.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-icy-snow.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-jungle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-marine.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-modern.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-monsoon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-ocean.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-poke-ball.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-polar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-river.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-sandstorm.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-savanna.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-sun.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon-tundra.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vivillon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/volbeat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/volcanion.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/volcarona.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/voltorb.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vullaby.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vulpix-alola.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/vulpix.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wailmer.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wailord.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/walrein.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wartortle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/watchog.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/weavile.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/weedle.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/weepinbell.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/weezing-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/weezing.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/whimsicott.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/whirlipede.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/whiscash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/whismur.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wigglytuff.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wimpod.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wingull.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wishiwashi-school.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wishiwashi.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wobbuffet.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/woobat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wooloo.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wooper.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wormadam-sandy.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wormadam-trash.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wormadam.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wurmple.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/wynaut.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/xatu.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/xerneas-active.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/xerneas.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/xurkitree.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yamask-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yamask.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yamper.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yanma.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yanmega.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yungoos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/yveltal.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zacian-crowned.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zacian.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zamazenta-crowned.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zamazenta.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zangoose.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zapdos-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zapdos.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zarude-dada.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zarude.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zebstrika.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zekrom.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zeraora.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zigzagoon-galar.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zigzagoon.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zoroark.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zorua.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zubat.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zweilous.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zygarde-10.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zygarde-complete.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+    <File Include="wwwroot/lib/Sprites/zygarde.png">
+      <publishTime>11/23/2020 11:47:11</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

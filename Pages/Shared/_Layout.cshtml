@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - pokemonProject</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onresize="resizeContentContainer()" onload="resizeContentContainer()">
+    <nav id="nav">
+        <div><a href="/">Home</a></div>
+    </nav>
+
+    <main role="main" >
+        @RenderBody()
+    </main>
+
+    <footer id="footer">
+        <div >
+            &copy; 2021 - pokemonProject - Pokémon © 2002–2021 Pokémon. © 1995–2021 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and Pokémon character names are trademarks of Nintendo. No copyright or trademark infringement is intended in using Pokémon content on PokemonProject.
+        </div>
+    </footer>
+
+    <script src="~/js/index.js" asp-append-version="true"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

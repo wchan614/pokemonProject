@@ -1,0 +1,50 @@
+@page
+@model AbilitiesModel
+@{
+    ViewData["Abilities"] = "Abilities";
+}
+
+
+
+<div>
+    <div id="pokemonResult">
+        <div class="pokemonInfo" style="text-align: center;">
+            <h1>
+                @Model.ability.Name.ToUpper().Replace("-"," ")
+            </h1>
+            <div>
+                @foreach(var text in Model.ability.FlavorTextEntries){
+                    if(text.Language.Name == "en") {
+                        @(text.FlavorText)
+                        break;
+                    }
+                }
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="pokemonResultExtra">
+    <div class="pkmnResultExtraBox">
+        <div class="pkmnResultBoxesDynamic">
+             <div class="pkmnResultTitle" style="margin-bottom: 10px;">Pokemon Able To Learn</div>
+             @foreach (var pkmn in Model.ability.Pokemon) {
+                if (Model.isValidPokemon(pkmn.Pokemon.Name)) {
+                    <div class="moveForm">
+                        <div class="moveFormButton">
+                            @{string link = "./Pokemon?id=" + pkmn.Pokemon.Name;}
+                            <a href="@link">@pkmn.Pokemon.Name.ToUpper().Replace("-"," ")</a>
+                        </div>
+                    </div>
+                }
+             }
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load',(event)=> {
+        lockMinWidth();
+    });
+</script>

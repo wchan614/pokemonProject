@@ -1,0 +1,333 @@
+@page
+@model PokemonModel
+@{
+    ViewData["Pokemon"] = "Pokemon";
+}
+
+
+
+<div>
+    <div id="pokemonResult">
+        <img id="pkmnPageImg" src="@Model.pkmn.Sprites.Other.OfficialArtwork.FrontDefault" alt="@Model.pkmn.Name">
+        <div class="pokemonInfo">
+            <h1 id="pkmnPageName">@Model.pkmn.Name.ToUpper() @Model.pkmn.Id.ToString().Insert(0,"#")</h1>
+            <h4>TYPE: 
+                @Model.pkmn.Types[0].details.Name.ToUpper()
+                @if (Model.pkmn.Types.Count == 2) {
+                    @Model.pkmn.Types[1].details.Name.ToUpper().Insert(0,"/ ");
+                }
+            </h4>
+            <h4>
+                ABILITIES:
+                @foreach (var ability in Model.pkmn.Abilities)
+                {
+                    string[] abilitySplit = ability.details.Name.Split("-");
+                    string link ="./abilities?ability=" + ability.details.Name;
+                    if (abilitySplit.Length == 1) {
+                        <a class="abilityListing" href=@link>@(char.ToUpper(abilitySplit[0].First()) + abilitySplit[0].Substring(1).ToLower())</a>
+                    }
+                    else {
+                        <a class="abilityListing" href=@link>@(char.ToUpper(abilitySplit[0].First()) + abilitySplit[0].Substring(1).ToLower()+" "+abilitySplit[1])</a>
+                    }
+                }
+            </h4>
+            <h5>
+                Pre-evolution: 
+                @if (Model.species.EvolvesFromSpecies != null) {
+                    <a href="/Pokemon?id=@Model.species.EvolvesFromSpecies.Name" >@Model.species.EvolvesFromSpecies.Name.ToUpper() </a>
+                }
+                else {
+                    @("None")
+                }
+            </h5>
+            <h5>
+                Evolution: 
+                @{
+                    var curChain = new List<Models.Chain>();
+                    var evolutions = new List<String>();
+                    var newChain = new List<Models.Chain>();
+                    curChain.Add(@Model.chain.Chain);
+                    bool found = false;
+                    while(!found) {
+                        @foreach (Models.Chain chain in curChain) {
+                            if (chain.Species.Name == @Model.pkmn.Name) {
+                                foreach (Models.Chain evo in chain.EvolvesTo) {
+                                    evolutions.Add(evo.Species.Name);
+                                }
+                                Console.WriteLine("Evolution Found");
+                                found = true;
+                                break;
+                            }
+                            else {
+                                foreach (Models.Chain evo in chain.EvolvesTo) {
+                                    newChain.Add(evo);
+                                }
+                            }
+                        }
+                        curChain = newChain;
+                        newChain = new List<Models.Chain>();
+                        if (!curChain.Any()) {
+                            found = true;
+                        }
+                    }
+                    Console.WriteLine(evolutions.Count);
+                    if (evolutions.Any()) {
+                        foreach (string names in evolutions) {
+                            <a href="/Pokemon?id=@names">@names.ToUpper()</a>
+                        }
+                    }
+                    else {
+                        <span>None</span>
+                    }
+                }
+    
+            </h5>
+        </div>
+    </div>
+</div>
+
+<div id="pokemonResultExtra">
+    <div class="pkmnResultExtraBox">
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Gender Ratio</div>
+
+                @if (Model.species.GenderRate == -1) {
+                    <div class="pkmnResultBoxText"> 
+                        Genderless
+                    </div>
+                }
+                else {
+                    <div class="pkmnResultBoxText"> 
+                        Male: @(100 - Model.species.GenderRate*12.5)% <br>
+                        Female: @(Model.species.GenderRate*12.5)%
+                    </div>
+                }
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Catch Rate</div>
+            <div class="pkmnResultBoxText">
+                Rate: @(Model.species.CaptureRate)
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Breeding</div>
+            <div class="pkmnResultBoxText">
+                Egg Group: <br>
+                @if (Model.species.EggGroups.Count == 1){
+                    @(Model.species.EggGroups[0].Name.ToUpper())
+                }
+                else if (Model.species.EggGroups.Count == 2) {
+                    @(Model.species.EggGroups[0].Name.ToUpper())
+                    <br>
+                    @(Model.species.EggGroups[1].Name.ToUpper())
+                }
+                else {
+                    @("None")
+                }
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Height</div>
+            <div class="pkmnResultBoxText">
+                @(Model.pkmn.Height * 10) CM
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Weight</div>
+            <div class="pkmnResultBoxText">
+                @(Model.pkmn.Weight / 10) KG
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Base EXP yield</div>
+            <div class="pkmnResultBoxText">
+                @(Model.pkmn.BaseExperience)
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Base Friendship</div>
+            <div class="pkmnResultBoxText">
+                @(Model.species.BaseHappiness)
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesSmall">
+            <div class="pkmnResultTitle">Leveling Rate</div>
+            <div class="pkmnResultBoxText">
+                @(Model.species.GrowthRate.Name.ToUpper())
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesMedium">
+            <div class="pkmnResultTitle">EV Rate</div>
+            <div class="pkmnEVBox">
+                <div>Total: 
+                    @{int sum = 0;} 
+                    @for(int i = 0; i < Model.pkmn.Stats.Count; i++) {
+                        sum += Model.pkmn.Stats[i].Effort;
+                    }
+                    @sum
+                    
+                </div>
+                <span>HP: @Model.pkmn.Stats[0].Effort</span>
+                <span>ATK: @Model.pkmn.Stats[1].Effort</span>
+                <span>DEF: @Model.pkmn.Stats[2].Effort</span>
+                <span>SP ATK: @Model.pkmn.Stats[3].Effort</span>
+                <span>SP DEF: @Model.pkmn.Stats[4].Effort</span>
+                <span>SPEED: @Model.pkmn.Stats[5].Effort</span>
+            </div>
+        </div>
+
+        <div class="pkmnResultBoxesMedium">
+            <div class="pkmnResultTitle">Base Stats</div>
+            @{
+                string barWidth;
+            }
+            <div class="progressBar" style="background-color: #ca3b3b">
+                <div class="progressBarTitle" style="background-color: #d05e5e;">HP: <div>@Model.pkmn.Stats[0].BaseStat</div></div>
+                @{barWidth = ((int)(Model.pkmn.Stats[0].BaseStat/2.5)).ToString() + "%";}
+                
+                <div class="progress" style=" width: @barWidth"></div>
+            </div>
+
+            <div class="progressBar" style="background-color: #f5b342">
+                <div class="progressBarTitle" style="background-color: #edc174;">ATK: <div>@Model.pkmn.Stats[1].BaseStat</div></div>
+                @{barWidth = ((int)(Model.pkmn.Stats[1].BaseStat/2.5)).ToString() + "%" ;}
+
+                <div class="progress" style=" width: @barWidth"></div> 
+            </div>
+
+            <div class="progressBar" style="background-color: #f5e751">
+                <div class="progressBarTitle" style="background-color: #f0e575;">DEF: <div>@Model.pkmn.Stats[2].BaseStat</div></div>
+                @{barWidth = ((int)(Model.pkmn.Stats[2].BaseStat/2.5)).ToString() + "%";}
+
+                <div class="progress" style=" width: @barWidth"></div>
+            </div>
+
+            <div class="progressBar"  style="background-color: #4f85f0">
+                <div class="progressBarTitle" style="background-color: #6592eb;">SP ATK: <div>@Model.pkmn.Stats[3].BaseStat</div></div>
+                @{barWidth = ((int)(Model.pkmn.Stats[3].BaseStat/2.5)).ToString() + "%";}
+
+                <div class="progress" style="width: @barWidth"></div> 
+            </div>
+
+            <div class="progressBar" style="background-color: #3dc453">
+                <div class="progressBarTitle" style="background-color: #77d486;">SP DEF: <div>@Model.pkmn.Stats[4].BaseStat</div></div>
+                @{barWidth = ((int)(Model.pkmn.Stats[4].BaseStat/2.5)).ToString() + "%";}
+
+                <div class="progress" style=" width: @barWidth"></div> 
+            </div>
+
+            <div class="progressBar" style="background-color: #c748c5">
+                <div class="progressBarTitle" style="background-color: #e075df;">SPEED: <div>@Model.pkmn.Stats[5].BaseStat</div></div>
+                @{barWidth = ((int)(Model.pkmn.Stats[5].BaseStat/2.5)).ToString() + "%";}
+
+                <div class="progress" style="width: @barWidth"></div>
+            </div>
+        </div>
+        
+        <div class="pkmnResultBoxesLarge">
+            <div class="pkmnResultTitle">Type Effectiveness</div>
+            @{
+                string[] allTypes = {"NOMRAL","FIRE","FIGHTING","WATER","FLYING","GRASS","POISON","ELECTRIC","GROUND",
+                "PSYCHIC","ROCK","ICE","BUG","DRAGON","GHOST","DARK","STEEL","FAIRY"};
+                List<string> normalEff = new List<string>();
+                List<string> weakEff = new List<string>();
+                List<string> resistEff = new List<string>();
+                List<string> immuneEff = new List<string>();
+                
+                foreach (var type in Model.pkmn.Types) {
+                    await Model.GetType(type.details.Url);
+                    // Now the type in Model is updated. 
+                    // Populate lists
+                    //Weak
+                    foreach (var t in Model.type.DamageRelations.DoubleDamageFrom) {
+                        weakEff.Add(t.Name.ToUpper());
+                    }
+                    //Resist
+                    foreach (var t in Model.type.DamageRelations.HalfDamageFrom) {
+                        resistEff.Add(t.Name.ToUpper());
+                    }
+                    //Immune
+                    foreach (var t in Model.type.DamageRelations.NoDamageFrom) {
+                        immuneEff.Add(t.Name.ToUpper());
+                    }
+                }
+
+                var normal = from typ in allTypes.Except(weakEff).Except(resistEff).Except(immuneEff) select typ;
+                normalEff.AddRange(normal);
+            }
+
+            <div class="TypeEffTitle">Normal Effective by:</div>
+            @if (normalEff.Any()) {
+                foreach(var typ in normalEff) {
+                    <span>@typ</span>
+                }
+            }
+            else {
+                <span>None</span>
+            }
+
+            <div class="TypeEffTitle">Weak to:</div>
+            @if (weakEff.Any()) {
+                foreach(var typ in weakEff) {
+                    <span>@typ</span>
+                }
+            }
+            else {
+                <span>None</span>
+            }
+
+            <div class="TypeEffTitle">Resistant to:</div>
+            @if (resistEff.Any()) {
+                foreach(var typ in resistEff) {
+                    <span>@typ</span>
+                }
+            }
+            else {
+                <span>None</span>
+            }
+
+            <div class="TypeEffTitle">Immune to:</div>
+            @if (immuneEff.Any()) {
+                foreach(var typ in immuneEff) {
+                    <span>@typ</span>
+                }
+            }
+            else {
+                <span>None</span>
+            }
+
+
+        </div>
+
+        <div class="pkmnResultBoxesDynamic">
+            <div class="pkmnResultTitle" style="margin-bottom: 10px;">Move List</div>
+            <!--sort moves alphabetically-->
+            @{
+                Model.pkmn.Moves.Sort((x,y) => x.details.Name.CompareTo(y.details.Name));
+            }
+                @foreach (var move in Model.pkmn.Moves) {
+                    string moveName = move.details.Name.ToUpper().Replace("-"," ");
+                    <div class="moveForm">
+                        <div class=moveFormButton>
+                            @{string link = "./Moves?move=" + moveName.ToLower().Replace(" ","-");}
+                           <a href="@link">@moveName</a> 
+                            </div>
+                    </div>
+                }
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load',(event)=> {
+        lockMinWidth();
+    });
+</script>
